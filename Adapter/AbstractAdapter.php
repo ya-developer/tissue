@@ -14,7 +14,6 @@ namespace CL\Tissue\Adapter;
 use CL\Tissue\Model\Detection;
 use CL\Tissue\Model\ScanResult;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Symfony\Component\Process\ProcessBuilder;
 
 abstract class AbstractAdapter implements AdapterInterface
@@ -25,7 +24,7 @@ abstract class AbstractAdapter implements AdapterInterface
     protected $options;
 
     /**
-     * @var OptionsResolverInterface|null
+     * @var OptionsResolver|null
      */
     private $resolver;
 
